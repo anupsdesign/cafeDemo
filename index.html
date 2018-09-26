@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="plugins/parallax.js"></script> 
+    <link rel="stylesheet" href="plugins/aos.css">  
+      
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">  
+
+    <title>City Cafe Grill &amp; Bar</title>  
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 150) {
+                $("header").addClass("headerchange");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+               $("header").removeClass("headerchange");
+            }
+        });
+    </script>
+      
+    <style>
+        
+    </style> 
+      
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+        <h2>City Cafe </h2><span>Bar &amp; Grill</span>
+    </div>
+      <nav id="myDropdown" class="dropdown-content">
+        <a href="#" class="active scroll">Home</a>
+        <a href="#bottom" class="scroll">Menu</a>
+        <a href="#" class="scroll">Events</a>
+        <a href="#" class="scroll">About</a>
+        <a href="#" class="scroll">Contact</a>  
+      </nav>
+        <div class="nav-social">
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fab fa-yelp" ></i></a>
+            <a href="#"><i class="fab fa-facebook-f" ></i></a>
+        </div>
+        <label >
+            <i onclick="myFunction()" class="fas fa-th-large dropbtn"></i>
+        </label>
+    </header>
+      
+    <section id="one" data-parallax="scroll" data-image-src="images/citycafe.jpg" >
+        <div class="time-notice">
+            <i class="far fa-clock"></i>
+<!--            <p><span style="font-style: italic">Sun, Sept 23 </span>| We&#39;re closed until Monday 11am</p>-->
+            <p><span style="font-style: italic">Sun, Sept 23 </span>| We&#39;re open today until 10PM</p>
+        </div>
+        <div class="center">
+            <h1>City Cafe Grill &amp; Bar</h1>
+            <p>Asian Cuisine</p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i> 67&#45;12 Freshpong Rd, Flushing, NY 11385</p>
+        </div>
+            <i class="fas fa-chevron-circle-down floating" onclick="smoothScroll(document.getElementById('two'))"></i>
+    </section>
+      
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-md left">
+                    <div class="center-content">
+                    <h1> Welcome</h1>
+                    <p>
+                    A place of enjoyment and relaxation at one of the most enchanting places of the city, in the middle of the central city park. Enjoy modern Italian cuisine at the highest level. The quality lies in the composition of best products.
+                    </p>
+                    <a href="#"><button>About us</button></a>
+                    </div>
+                    <h2>We&#39;re open <span>Everyday</span> from 11am &#45; 10pm</h2>    
+                </div>
+                <div class="col-md right">
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <section id="three" data-parallax="scroll" data-image-src="images/pakoda.jpg" >
+        <div class="three-wrap">
+            <div class="container">
+                <div class="row">
+                <div class="col-md">
+                <h1>Order online</h1>
+                    <div class="order-logo">
+                    <a href="https://www.doordash.com/store/city-cafe-grill-bar-queens-396848/495331/" target="_blank"><img src="images/DoorDash.png" width="200px"></a>
+                    <a href="https://www.grubhub.com/restaurant/city-cafe-grill--bar-6714-fresh-pond-rd-ridgewood/936365" target="_blank"><img src="images/grubhub.png" width="150px"></a>
+                </div>
+                </div>
+                <div class="divider"></div>    
+                <div class="col-md">
+                <h1>Make a Reservation</h1> 
+                <p> 
+                    To make a reservation please call us at <br>
+                    <a href="#">&#43;1 917 &#8226; 909 &#8226; 1336</a>
+                </p>
+                </div>     
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+    <p>&copy; <span class="footer-year"></span> City Cafe Restaurant Bar &amp; Grill &#9679; <span>Desgined by Anup</span></p>  
+    </footer>  
+      
+    <script type="text/javascript">
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>  
+    <script>
+        
+      window.smoothScroll = function(target) {
+        var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+    
+        var scrollContainer = target;
+        var headerHeight = $('header').outerHeight();  
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            if (isSafari) {targetY += target.offsetTop-headerHeight;}else{
+                targetY += target.offsetTop-headerHeight/2;
+            }
+        } while (target = target.offsetParent);
+
+        scroll = function(c, a, b, i) {
+            i++; if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function(){ scroll(c, a, b, i); }, 16);
+        }
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+    </script> 
+<!-- For aos-->  
+    <script src="plugins/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1200,
+      });
+    </script>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
