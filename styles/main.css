@@ -9,7 +9,10 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim');
 @import url('https://fonts.googleapis.com/css?family=Voltaire');
 @import url('https://fonts.googleapis.com/css?family=Geo');
-
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 a,a:hover{
     text-decoration: none;
 }
@@ -196,9 +199,6 @@ section#three{
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 5px); }
     to   { transform: translate(0, -0px); }    
-}
-#two .container{
-    padding: 0px;
 }
 #two .container .row {
     padding: 20px;
@@ -455,9 +455,7 @@ footer p span{
         border-radius: 0;
     }
     .nav-social{
-    position: absolute;
-    left: 0px;
-    top: 40px;
+    display: none;
 }
     .nav-social a i{
         padding: 0px;
@@ -465,12 +463,35 @@ footer p span{
         color: #21252B;
     }
     #one h1{
-    font-size: 1.5em;
+    font-size: 6vw;
+}
+    #one .center p{
+    font-size: 6vw;
 }
     #two .container .row .right{
     background-image: url(../images/chairs.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+    .time-notice{
+    font-size: 3vw;
+    width: 80%;
+}
+.time-notice i{
+    float: left;
+    color: #BE935A;
+    position: relative;
+    line-height: 20px;
+    padding-right: 4px;
+    font-size: 1.6em;
+    text-shadow: 2px 1px 6px rgba(0,0,0,.35);
+}
+.time-notice p{
+    font-size: .9em;
+    margin: 0;
+    padding-left: 25px;
+    text-shadow: 2px 1px 6px rgba(0,0,0,.15);
+    color: #21252B;
 }
 }
